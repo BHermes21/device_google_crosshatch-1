@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# Allow Lineage config to override others
--include device/google/crosshatch/crosshatch/BoardConfigLineage.mk
+# Allow rr config to override others
+-include device/google/crosshatch/crosshatch/BoardConfigrr.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := crosshatch
 TARGET_SCREEN_DENSITY := 560

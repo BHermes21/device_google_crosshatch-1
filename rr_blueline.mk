@@ -2,16 +2,19 @@
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common rr stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
 
--include device/google/crosshatch/blueline/device-lineage.mk
+-include device/google/crosshatch/blueline/device-rr.mk
+
+# Inherit PixelGApps
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_blueline
+PRODUCT_NAME := rr_blueline
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
 TARGET_MANUFACTURER := Google
@@ -22,5 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="blueline-user 10 QQ3A.200805.001 6578210 release-keys"
 
 BUILD_FINGERPRINT := google/blueline/blueline:10/QQ3A.200805.001/6578210:user/release-keys
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 $(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)

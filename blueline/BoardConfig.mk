@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# Allow Lineage config to override others
--include device/google/crosshatch/blueline/BoardConfigLineage.mk
+# Allow rr config to override others
+-include device/google/crosshatch/blueline/BoardConfigrr.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := blueline
 TARGET_SCREEN_DENSITY := 440
