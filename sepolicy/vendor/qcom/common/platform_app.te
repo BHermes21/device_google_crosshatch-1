@@ -9,3 +9,8 @@ allow platform_app hal_wlc:binder { call transfer };
 
 allow platform_app sysfs_thermal:dir search;
 allow platform_app sysfs_thermal:file { getattr open read };
+
+allow platform_app sysfs_batteryinfo:dir search;
+allow platform_app sysfs_batteryinfo:file { getattr open read };
+allow platform_app sysfs_msm_subsys:dir search;
+allow platform_app sysfs_msm_subsys:file { getattr open read };
