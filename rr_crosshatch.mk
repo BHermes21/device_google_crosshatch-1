@@ -13,6 +13,9 @@ $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
+# RR Wallpapers
+BUILD_RR_WALLPAPERS := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := rr_crosshatch
 PRODUCT_BRAND := google
