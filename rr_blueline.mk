@@ -27,7 +27,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
     PRIVATE_BUILD_DESC="blueline-user 10 QQ3A.200805.001 6578210 release-keys"
 
-BUILD_FINGERPRINT := google/blueline/blueline:10/QQ3A.200805.001/6578210:user/release-keys
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
